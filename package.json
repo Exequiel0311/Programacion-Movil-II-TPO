@@ -1,16 +1,17 @@
 {
   "dependencies": {
     "cors": "2.8.6",
-    "express": "5.2.1"
+    "express": "5.2.1",
+    "mysql2": "^3.23.4"
   },
   "name": "programacion-movil-ii-tpo",
   "version": "1.0.0",
   "description": "Trabajo Practico Obligatorio final de la materia",
   "main": "index.js",
   "type": "module",
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node src/importaciones/base.js"
   },
   "author": "Romero Matias Exequiel",
   "license": "ISC"
