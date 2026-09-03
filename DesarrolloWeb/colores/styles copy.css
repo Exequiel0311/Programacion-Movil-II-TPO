@@ -1,0 +1,17 @@
+.box{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+#rojo {
+    background-color: #f00
+}
+
+#verde {
+    background-color: #0f0;
+}
+
+#azul {
+    background-color: #00f;
+}

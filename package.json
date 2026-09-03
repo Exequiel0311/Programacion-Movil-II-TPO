@@ -11,7 +11,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node src/importaciones/base.js"
+    "dev": "node src/app.js"
   },
   "author": "Romero Matias Exequiel",
   "license": "ISC"
