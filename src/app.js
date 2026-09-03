@@ -2,7 +2,11 @@ import express from 'express';
 import cors from 'cors';
 import connection from './database/connection.js';
 
+
 const app = express();
+
+app.use(cors()); 
+// app.use(express.json());
 
 // const [rows] = await connection.query(
 //     "SELECT * FROM usuarios"
@@ -16,7 +20,6 @@ app.get('/', async (req, res) => {
         "SELECT * FROM usuarios"
     );
     res.json(rows);
-    console.log(rows);
 });
 
 app.listen(3000, () => {
