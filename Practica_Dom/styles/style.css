@@ -1,0 +1,16 @@
+.p_cambiado{
+    color: rgb(102, 255, 0);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#contenedor2{
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+#contenedor3{
+    border: 1px solid #000;
+    padding: 10px;
+    margin-top: 10px;
+}
