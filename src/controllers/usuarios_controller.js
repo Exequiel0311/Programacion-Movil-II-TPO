@@ -5,11 +5,25 @@ export const getUsuarios = async (req, res) => {
         const [rows] = await connection.query(
             "SELECT * FROM usuarios"
         );
-        res.json(rows);
+        return res.json(rows);
     } catch (error) {
         console.error("Error al obtener usuarios:", error);
-        res.status(500).json({ error: "Error al obtener usuarios" });
+        return res.status(500).json({ error: "Error al obtener usuarios" });
     }
-    res.json({ message: "Controlador de usuarios funcionando correctamente" });
 };
 
+export const crearUsuario = async (req, res) => {
+    try {
+        const { nombre, email } = req.body;
+        const [result] = await connection.query(
+            "INSERT INTO usuarios (nombre, email) VALUES (?, ?)",
+            [nombre, email]
+        );
+        return res.status(201).json({ id: result.insertId, nombre, email });
+    } catch (error) {
+        console.error("Error al crear usuario:", error);
+        return res.status(500).json({ error: "Error al crear usuario" });
+    }
+};
+
+export default { getUsuarios, crearUsuario };

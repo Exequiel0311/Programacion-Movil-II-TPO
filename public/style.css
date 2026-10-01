@@ -1,0 +1,28 @@
+#box{
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;         /* o max-height, o 100vh, etc. */
+    overflow-y: auto;
+    margin: 8px;
+}
+
+.usuarioTarjeta {
+    border: 1px solid #444444;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 4px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+#form{
+    border: 1px solid #444444;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px;
+    max-width: 300px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+}

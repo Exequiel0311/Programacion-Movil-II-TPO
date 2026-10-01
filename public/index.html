@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="#" type="image/x-icon">
     <title>Frontend</title>
 </head>
@@ -11,8 +12,15 @@
 <body>
     <h1>Pagina Principal</h1>
     <button id="btn">Cargar Usuarios</button>
-    <button id="btnx">Borrar Usuarios</button>
+    <button id="btnx">Limpiar Usuarios</button>
     <div id="box"></div>
+
+    <form id="form">
+        <h2>Crear Usuario</h2>
+        <input type="text" name="name" id="input_nombre" placeholder="Nombre">
+        <input type="text" name="email" id="input_email" placeholder="Email">
+        <button type="submit">Agregar Usuario</button>
+    </form>
     <script src="index.js"></script>
 </body>
 
